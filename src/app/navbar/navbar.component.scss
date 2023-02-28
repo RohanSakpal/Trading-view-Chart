@@ -1,0 +1,36 @@
+nav {
+    height: 100%;
+    background: #1E2128;
+}
+.side-nav-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+.side-nav-button:hover {
+    background-color: rgba(255,255,255,0.3);
+    border-radius: 30%;
+}
+.head {
+    color: white;
+    display: flex;
+    align-items: center;
+    .titleBx {
+        margin-right: 20px;
+    }
+    .titleDesc {
+        .date {
+            h3 {
+                font-size: 20px;
+            }
+            p {
+                font-size: 15px;
+            }
+            h3, p {
+                margin-bottom: 0;
+            }
+        }
+    }
+}

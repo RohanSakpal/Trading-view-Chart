@@ -1,0 +1,48 @@
+.containerBx {
+    padding: 30px;
+    background: #1E2128;
+    .filterBx {
+        border: 1px solid white;
+        border-radius: 12px;
+        margin-bottom: 20px;
+        .filter {
+            padding: 10px;
+            .filterTitle {
+                margin-bottom: 5px;
+                color: white;
+            }
+            .dropdown {
+                width: 80%;
+            }
+        }
+        .borderRight{
+            border-right: 0.5px solid white;
+        }
+        .marFirst {
+            border-radius: 12px 0 0 12px;
+        }
+        .marLast {
+            border-radius: 0 12px 12px 0;
+        }
+        .btnFilter {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            button {
+                background: orange;
+                padding: 10px 70px;
+                border-radius: 20px;
+                font-weight: 700;
+                border: none;
+            }
+        }
+    }
+    .chartBx {
+        height: 450px;
+        .chart {
+            border-right: 1px solid black;
+            border: 1px solid white;
+            border-radius: 12px;
+        }
+    }
+}
