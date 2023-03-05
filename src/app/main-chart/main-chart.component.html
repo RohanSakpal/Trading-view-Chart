@@ -3,29 +3,29 @@
         <div class="col-md-3 filter borderRight marFirst">
             <p class="filterTitle">instruments</p>
             <div class="btn-group dropdown">
-                <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Nifty
-                </button>
+              <select class="form-select" style="background-color: white;color: black;" aria-label="select example" #instru (change)="onSelectedInstrument(instru.value)">
+                <option style="background-color: white;color: black;" *ngFor="let item of instrumentArr" value="{{item.symbol}}">{{item.symbol}}</option>
+              </select>
               </div>
         </div>
         <div class="col-md-3 filter borderRight">
             <p class="filterTitle">Duration</p>
             <div class="btn-group dropdown">
-                <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Hourly
-                </button>
-              </div>
+              <select class="form-select" style="background-color: white;color: black;" aria-label="select example" #dura (change)="onSelectedDuration(dura.value)">
+                <option style="background-color: white;color: black;" *ngFor="let item of intervalArr" value="{{item.value}}">{{item.title}}</option>
+              </select>
+            </div>
         </div>
         <div class="col-md-3 filter borderRight">
-            <p class="filterTitle">Date</p>
+            <p class="filterTitle">Bar's Style</p>
             <div class="btn-group dropdown">
-                <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  9/2/2023
-                </button>
+              <select class="form-select" style="background-color: white;color: black;" aria-label="select example" #bar (change)="onSelectedBar(bar.value)">
+                <option style="background-color: white;color: black;" *ngFor="let item of barArr" value="{{item.value}}">{{item.title}}</option>
+              </select>
               </div>
         </div>
         <div class="col-md-3 filter btnFilter marLast">
-            <button>Submit</button>
+            <button (click)="submitOptions()">Submit</button>
         </div>
     </div>
 
